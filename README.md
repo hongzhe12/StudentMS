@@ -24,3 +24,4 @@
 
 业务功能说明：注意，数据排序功能可以按照排序的升序或者降序排序，并且可以选择排序依据。
 
+<img width="1280" alt="屏幕截图 2023-03-04 090106" src="https://user-images.githubusercontent.com/62501554/222879953-4b8b4582-6ba7-4319-bf10-cf58b3325c4d.png">
