@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>C:/Users/hongz/Pictures/4171306_day_flower_gift_love_valentine_icon.ico</file>
+    </qresource>
+</RCC>
