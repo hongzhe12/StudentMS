@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>580</width>
-    <height>370</height>
+    <width>407</width>
+    <height>861</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,215 +17,314 @@
    <iconset resource="images.qrc">
     <normaloff>:/new/prefix1/C:/Users/hongz/Pictures/4171306_day_flower_gift_love_valentine_icon.ico</normaloff>:/new/prefix1/C:/Users/hongz/Pictures/4171306_day_flower_gift_love_valentine_icon.ico</iconset>
   </property>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>560</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>成 绩：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>620</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>姓 名：</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>391</width>
+     <height>431</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>561</width>
-     <height>351</height>
+     <y>20</y>
+     <width>381</width>
+     <height>41</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <widget class="QComboBox" name="comboBoxOrder">
       <item>
-       <widget class="QComboBox" name="comboBoxOrder">
-        <item>
-         <property name="text">
-          <string>正序</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>倒序</string>
-         </property>
-        </item>
-       </widget>
+       <property name="text">
+        <string>正序</string>
+       </property>
       </item>
       <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
+       <property name="text">
+        <string>倒序</string>
+       </property>
       </item>
-      <item>
-       <widget class="QComboBox" name="comboBoxBy">
-        <item>
-         <property name="text">
-          <string>按学号</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>按成绩</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>按姓名</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButtonSort">
-        <property name="text">
-         <string>数据排序</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_6">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButtonQueryAll">
-        <property name="text">
-         <string>查询全部</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     </widget>
     </item>
     <item>
-     <widget class="QTableView" name="tableView"/>
+     <spacer name="horizontalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <widget class="QComboBox" name="comboBoxBy">
       <item>
-       <widget class="QLabel" name="label">
-        <property name="text">
-         <string>学 号:</string>
-        </property>
-       </widget>
+       <property name="text">
+        <string>按学号</string>
+       </property>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_ID"/>
+       <property name="text">
+        <string>按成绩</string>
+       </property>
       </item>
       <item>
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>姓 名:</string>
-        </property>
-       </widget>
+       <property name="text">
+        <string>按姓名</string>
+       </property>
       </item>
-      <item>
-       <widget class="QLineEdit" name="lineEdit_NAME"/>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>成 绩:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEdit_SCORE"/>
-      </item>
-     </layout>
+     </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
-      <item>
-       <widget class="QPushButton" name="pushButton_INSERT">
-        <property name="text">
-         <string>插入数据</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_DELETE">
-        <property name="text">
-         <string>删除数据</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_4">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_UPDATE">
-        <property name="text">
-         <string>更新数据</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_5">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_SEARCH">
-        <property name="text">
-         <string>查询数据</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonSort">
+      <property name="text">
+       <string>数据排序</string>
+      </property>
+     </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButtonQueryAll">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>819</y>
+     <width>381</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询全部/刷新数据</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_SCORE">
+   <property name="geometry">
+    <rect>
+     <x>101</x>
+     <y>560</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>510</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>学 号:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_NAME">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>620</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ID">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>510</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_DELETE">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>700</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除数据</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_SEARCH">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>740</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询数据</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_INSERT">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>660</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>插入数据</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_UPDATE">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>780</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>更新数据</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>660</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>添加学生</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>700</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>删除学生</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>740</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>查询学生</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>770</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>修改信息</string>
+   </property>
   </widget>
  </widget>
  <resources>

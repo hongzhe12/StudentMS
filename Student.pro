@@ -13,8 +13,7 @@ SOURCES += \
     studentdialog.cpp
 
 HEADERS += \
-    studentdialog.h \
-    ui_studentdialog.h
+    studentdialog.h
 
 FORMS += \
     studentdialog.ui
